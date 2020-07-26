@@ -26,7 +26,7 @@ Obs: Foram utilizadas os seguintes hooks do ReactJS <img src="readme/react.png" 
 </ul>
 
 <h4>Entenda porque essa navbar é tão complexa acessando o vídeo da Rocketseat abaixo: </h4>
-<a href="https://www.youtube.com/watch?v=B7V0q0ZSz2o&t=7200s" target"_blank">Vídeo</a>
+<a href="https://www.youtube.com/watch?v=B7V0q0ZSz2o&t=7200s" target="_blank">Vídeo</a>
 
 ---
 
