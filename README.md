@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img alt="" title="" src="readme/navbar.gif" width="300" height="600">
+    <img alt="" title="" src="readme/navbar.gif" width="600" height="700">
 </h1>
 
 <h2 align="center">Reprodução da navbar do site Stripe.com.</h2>
@@ -11,7 +11,7 @@
 <h3><strong>:satellite:Tecnologias utilizadas:</strong></h3>
 
 <h3>ReactJS <img src="readme/react.png" alt="react" height="18"> </h3>
-<h3>Frame Motion <img src="readme/framerMotion.png alt="framer motion" height="18"> </h3>
+<h3>Frame Motion <img src="readme/framerMotion.png" alt="framer motion" height="18"> </h3>
 
 Obs: Foram utilizadas os seguintes hooks do ReactJS <img src="readme/react.png" alt="react" height="18">
 
