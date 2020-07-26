@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img alt="" title="" src="readme/navbar.gif" width="600" height="700">
+    <img alt="" title="" src="readme/navbar.gif" width="700" height="600">
 </h1>
 
 <h2 align="center">Reprodução da navbar do site Stripe.com.</h2>
