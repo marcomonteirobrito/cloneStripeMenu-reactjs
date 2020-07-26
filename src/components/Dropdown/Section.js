@@ -6,7 +6,7 @@ import { Context } from './Provider';
 export function DropdownSection({ option }) {
   const { cachedId } = useContext(Context);
 
-  const { id, contentDimensions, optionCenterX } = option;
+  const { id, optionCenterX, contentDimensions } = option;
 
   const contentWidth = contentDimensions?.width || 0;
   const x = optionCenterX - contentWidth / 2;
@@ -14,8 +14,8 @@ export function DropdownSection({ option }) {
   const isActive = cachedId === id;
 
   return (
-    <motion.div 
-      className='dropdown-section'
+    <motion.div
+      className="dropdown-section"
       initial={{
         x,
       }}
@@ -26,9 +26,8 @@ export function DropdownSection({ option }) {
       }}
       transition={{
         ease: 'easeOut',
-        opacity: { duration: 0.2},
+        opacity: { duration: 0.2 },
       }}
-
     >
       <option.WrappedContent />
     </motion.div>

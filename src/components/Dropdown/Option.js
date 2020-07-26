@@ -36,15 +36,15 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
             <Content />
           </div>
         );
-      }
+      };
 
       registerOption({
         id,
         optionDimensions,
         optionCenterX: optionDimensions.x + optionDimensions.width / 2,
         WrappedContent,
-        backgroundHeight
-      })
+        backgroundHeight,
+      });
 
       setRegistered(true);
     } else if (registered && optionDimensions) {
@@ -60,22 +60,24 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
     optionDimensions,
     updateOptionProps,
     deleteOptionById,
-    backgroundHeight
+    backgroundHeight,
   ]);
+
+  useEffect(() => deleteOptionById(id), [deleteOptionById, id]);
 
   const handleOpen = () => setTargetId(id);
   const handleClose = () => setTargetId(null);
   const handleTouch = () => (window.isMobile = true);
 
-  const handleClick = (event) => {
-    event.preventDefault();
+  const handleClick = (e) => {
+    e.preventDefault();
 
     return targetId === id ? handleClose() : handleOpen();
   };
 
   return (
-    <motion.button 
-      className='dropdown-option'
+    <motion.button
+      className="dropdown-option"
       ref={optionHook}
       onMouseDown={handleClick}
       onHoverStart={() => !window.isMobile && handleOpen()}
@@ -83,7 +85,7 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
       onTouchStart={handleTouch}
       onFocus={handleOpen}
       onBlur={handleClose}
-      >
+    >
       {name}
     </motion.button>
   );
